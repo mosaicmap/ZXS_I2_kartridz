@@ -4,7 +4,7 @@ TODO !
 
 Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki/ZX_Interface_2).
 
-In general this is updated Droy's design from here: [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm).
+In general this is updated Droy's design of his [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm).
 
 This version contains EEPROM chip W27C512 instead of 27*128 or 27*256. That is mainly because the W27C512 is more common and cheaper then 27128 and 27256. Search for W27C512 on the eBay. W27C512 also has a bigger capacity. The number 512 in the chip name means 512 Kib = 64 KiB. So one cartridge can contain up to four 16 KiB ROM files. Only one ROM file can be active at one time - which one is given by jumpers. 
 

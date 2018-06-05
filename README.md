@@ -1,33 +1,37 @@
 # ZXS_I2_kartridz
 
-TODO !
-
 Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki/ZX_Interface_2).
 
-In general this is updated design of Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm).
+**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. Main reason is that the W27C512 is more common and cheaper then 27\*128 and 27\*256 nowadays. Search for W27C512 on the eBay... Also W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time. 
 
-This version contains EEPROM chip W27C512 instead of 27*128 or 27*256. That is mainly because the W27C512 is more common and cheaper then 27128 and 27256. Search for W27C512 on the eBay. W27C512 also has a bigger capacity. The number 512 in the chip name means 512 Kib = 64 KiB. So one cartridge can contain up to four 16 KiB ROM files. Only one ROM file can be active at one time - which one is given by jumpers. 
+## Notes 
+
+HW programmer is needed for uploading a ROM file. (For example universal programmer *MiniPro TL866CS* from eBay.)  
+
+Jumpers A14 and A15 decide which 16 KiB ROM bank is active. 
+
+This is only simple ROM cartridge for 16 KiB ROMs. If you want better cartridge, check the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
 
 
 ## EAGLE project
 
-Project contains schematic and board. See the screenshots below.
+Project contains schematic and board.
 
-Freeware version of Autodesk EAGLE 8 or newer is required.
+Project was created with freeware version of Autodesk EAGLE.
 
-TODO ! upload EAGLE files
+![screenshot-schematic](images/ZXS_I2_kartridz_27512_schematic.png)
 
-No Gerber files are included.
+![screenshot-pcb](images/ZXS_I2_kartridz_27512_pcb.png)
 
-## Screenshots
 
-TODO ! upload screenshots
 
-## ROM files
+## ROMs
 
-### Officialy released games (1983)
+See nice [overview by Paul Farrow](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_Cartridges.htm)
 
-Originaly was released only 10 games on cartridges. Namely:
+### Officialy released games (1984)
+
+Originaly was released only 10 games. Namely:
 
 - Backgammon
 - Cookie
@@ -40,11 +44,10 @@ Originaly was released only 10 games on cartridges. Namely:
 - Space Raiders
 - Tranz Am
 
-You can download all ROM files of these games for example from archive [carts.zip](http://trastero.speccy.org/cosas/droy/cartuchos/carts.zip)
+You can download all ROM files of these games as [archive carts.zip](http://trastero.speccy.org/cosas/droy/cartuchos/carts.zip)
 
-### Unreleased prototypes (cancelled, 1984)
 
-TODO
+### Unreleased prototypes (cancelled)
 
 - Popeye
 - Q*Bert
@@ -54,27 +57,29 @@ TODO
 - Loco Motion
 - Montezuma's Revenge
 
-### Sinclair BASIC for ZX Spectrum
 
-Just a copy of original Sinclair BASIC.
+### Sinclair BASIC for ZX Spectrum (1982) 
+
 
 ### Alternative BASIC interpreters
 
-- OpenSE BASIC 3
-- Gosh Woderful BASIC
+- [OpenSE BASIC 3](https://sourceforge.net/projects/sebasic/)
+- Gosh Woderful BASIC by Geoff Wearmouth ([mirror](https://8bit.yarek.pl/upgrade/zx.roms/gw03.zip))
 - Busy Soft ROM
 - ...
 
+
 ### Diagnostics 
 
-Very useful ROMs for testing hardware of a ZX Spectrum.
+Very useful ROMs for testing hardware of the ZX Spectrum.
 
-- Retroleum Diag ROM 
-- ZX-Diagnostics ROM by Brendan Alford
+- [Retroleum Diag ROM](http://blog.retroleum.co.uk/smart.zip) 
+- [ZX-Diagnostics ROM by Brendan Alford](https://github.com/brendanalford/zx-diagnostics/releases)
+
 
 ### Experimental games
 
-- DeathStar
+- DeathStar (8 KiB) (See [on fruitcake.plus.com](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_New_3rdParty_DeathStar.htm))
 
 
 

@@ -2,15 +2,15 @@
 
 Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki/ZX_Interface_2).
 
-**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. Main reason is that the W27C512 is more common and cheaper then 27\*128 and 27\*256 nowadays. Search for W27C512 on the eBay... Also W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time. 
+**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. The main reason is that the W27C512 is more common and cheaper than 27\*128 and 27\*256 nowadays. Search for W27C512 on the eBay... Also, W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time. 
 
 ## Notes 
 
-HW programmer is needed for uploading a ROM file. (For example universal programmer *MiniPro TL866CS* from eBay.)  
+For uploading ROM file is needed a HW programmer. For example, relatively cheap universal programmer *MiniPro TL866CS* from eBay is sufficient.  
 
 Jumpers A14 and A15 decide which 16 KiB ROM bank is active. 
 
-This is only simple ROM cartridge for 16 KiB ROMs. If you want better cartridge, check the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
+This is only simple ROM cartridge for 16 KiB ROMs. If you want better cartridge, check for example the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
 
 
 ## EAGLE project
@@ -66,6 +66,7 @@ You can download all ROM files of these games as [archive carts.zip](http://tras
 - [OpenSE BASIC 3](https://sourceforge.net/projects/sebasic/)
 - Gosh Woderful BASIC by Geoff Wearmouth ([mirror](https://8bit.yarek.pl/upgrade/zx.roms/gw03.zip))
 - Busy Soft ROM
+- [prettybasic](https://github.com/reclaimed/prettybasic)
 - ...
 
 

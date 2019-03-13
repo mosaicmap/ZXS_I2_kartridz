@@ -65,7 +65,7 @@ You can download all ROM files of these games as [archive carts.zip](http://tras
 
 - [OpenSE BASIC 3](https://sourceforge.net/projects/sebasic/)
 - Gosh Woderful BASIC by Geoff Wearmouth ([mirror](https://8bit.yarek.pl/upgrade/zx.roms/gw03.zip))
-- Busy Soft ROM
+- [Busy Soft ROM](https://busy.speccy.cz/tvorba/zxromky.htm)
 - [prettybasic](https://github.com/reclaimed/prettybasic)
 - ...
 

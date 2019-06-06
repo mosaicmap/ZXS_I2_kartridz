@@ -4,6 +4,8 @@ Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki
 
 **This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. Main reason is that the W27C512 is more common and cheaper then 27\*128 and 27\*256 nowadays. Search for W27C512 on the eBay... Also W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time. 
 
+![photo_with_case](images/ZXS_I2_kartridz_photo_w_case.jpg)
+
 ## Notes 
 
 HW programmer is needed for uploading a ROM file. (For example universal programmer *MiniPro TL866CS* from eBay.)  

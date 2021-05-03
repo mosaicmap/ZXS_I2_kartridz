@@ -2,24 +2,24 @@
 
 Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki/ZX_Interface_2).
 
-**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. The main reason is that the W27C512 is more common and cheaper than 27\*128 and 27\*256 nowadays. Search for W27C512 on the eBay... Also, W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time. 
+**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. The main reason is that the W27C512 is more common and cheaper than 27\*128 and 27\*256 nowadays. Search for W27C512 on eBay... Also, W27C512 has a bigger capacity. The number 512 in the chip name means 512 Kib (= 64 KiB). So, one cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time.  
 
 ![photo_with_case](images/ZXS_I2_kartridz_photo_w_case.jpg)
 
 ## Notes 
 
-For uploading ROM file is needed a HW programmer. For example, relatively cheap universal programmer *MiniPro TL866CS* from eBay is sufficient.  
+An HW programmer is required for uploading the ROM file to the EEPROM chip. For example, a relatively cheap universal programmer *MiniPro TL866CS* or *MiniPro TL866 II* from eBay is sufficient. Another option can be to build an EEPROM programmer using an Arduino; check for example [eeprom_programmer](https://github.com/StormTrooper/eeprom_programmer) and similar projects.
 
-Jumpers A14 and A15 decide which 16 KiB ROM bank is active. 
+Jumpers A14 and A15 decide which 16 KiB ROM bank is active. (A14 and A15 are signals of the W27C512, not A14 and A15 of the ZX Spectrum Edge connector)
 
-This is only simple ROM cartridge for 16 KiB ROMs. If you want better cartridge, check for example the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
+This is only a simple ROM cartridge for 16 KiB ROMs. If you want a better cartridge, check for example the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
 
 
 ## EAGLE project
 
-Project contains schematic and board.
+The project contains: schematic ``ZXS_I2_kartridz.sch`` and board ``ZXS_I2_kartridz.brd``. (Also ``lbr/zxs_i2_rom_edge_connector.lbr`` is required.)
 
-Project was created with freeware version of Autodesk EAGLE.
+It was created with a freeware version of Autodesk EAGLE.
 
 ![screenshot-schematic](images/ZXS_I2_kartridz_27512_schematic.png)
 
@@ -65,7 +65,7 @@ You can download all ROM files of these games as [archive carts.zip](http://tras
 
 ### Alternative BASIC interpreters
 
-- [OpenSE BASIC 3](https://sourceforge.net/projects/sebasic/)
+- OpenSE BASIC (mirrors: [worldofspectrum](https://worldofspectrum.org/archive/software/utilities/opense-basic-andrew-s-owen), [spectrumcomputing](https://spectrumcomputing.co.uk/entry/27510/ZX-Spectrum/OpenSE_BASIC))
 - Gosh Woderful BASIC by Geoff Wearmouth ([mirror](https://8bit.yarek.pl/upgrade/zx.roms/gw03.zip))
 - [Busy Soft ROM](https://busy.speccy.cz/tvorba/zxromky.htm)
 - [prettybasic](https://github.com/reclaimed/prettybasic)

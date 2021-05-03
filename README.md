@@ -8,7 +8,7 @@ Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki
 
 ## Notes 
 
-An HW programmer is required for uploading the ROM file to the EEPROM chip. For example, a relatively cheap universal programmer *MiniPro TL866CS* or *MiniPro TL866 II* from eBay is sufficient. Another option can be to build an EEPROM programmer using an Arduino; check for example [eeprom_programmer](https://github.com/StormTrooper/eeprom_programmer) and similar projects.
+An HW programmer is required for uploading the ROM file to the EEPROM chip. For example, a relatively cheap universal programmer *MiniPro TL866CS* or *MiniPro TL866 II* from eBay is sufficient. Another option may be a homemade EEPROM programmer made of an Arduino; check for example [eeprom_programmer](https://github.com/StormTrooper/eeprom_programmer) and similar projects.
 
 Jumpers A14 and A15 decide which 16 KiB ROM bank is active. (A14 and A15 are signals of the W27C512, not A14 and A15 of the ZX Spectrum Edge connector)
 

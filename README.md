@@ -2,20 +2,20 @@
 
 Simple ROM cartridge for [Sinclair ZX Interface 2](https://en.wikipedia.org/wiki/ZX_Interface_2).
 
-**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip W27C512 instead of the 27\*128 or 27\*256. The main reason is that the W27C512 is more common and cheaper than 27\*128 and 27\*256 chips nowadays. Search for W27C512 on eBay... Also, W27C512 has a bigger capacity. One cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time.  
+**This is basically updated Droy's [ZX Cart](http://trastero.speccy.org/cosas/droy/cartuchos/cartuchos_s.htm)**. My version contains an EEPROM chip **W27C512** instead of the 27\*128 or 27\*256. The main reason is that the W27C512 is more common and cheaper than 27\*128 and 27\*256 chips nowadays (Search for W27C512 on eBay...) W27C512 has also a bigger capacity. One cartridge can hold up to four 16 KiB ROM banks. Of course, only one ROM file can be active at one time.  
 
 ![photo_with_case](images/ZXS_I2_kartridz_photo_w_case.jpg)
 
 
 ## Notes 
 
-An HW programmer is required for uploading the ROM file to the EEPROM chip. For example, a relatively cheap universal programmer *MiniPro TL866CS* or *MiniPro TL866 II* from eBay is sufficient. Another option may be a homemade EEPROM programmer made of an Arduino; check for example [eeprom_programmer by StormTrooper](https://github.com/StormTrooper/eeprom_programmer) and similar projects.
+A HW programmer is required for uploading the ROM file to the EEPROM chip. For example, a relatively cheap universal programmer *MiniPro TL866CS* or *MiniPro TL866 II* from eBay is sufficient. Another option may be a homemade EEPROM programmer made of an Arduino; check for example [eeprom_programmer by StormTrooper](https://github.com/StormTrooper/eeprom_programmer) and similar projects.
 
-Rom files can be merged by concat to one file for simplified upload. Under Linux/Unix: ``cat 1.rom 2.rom 3.rom 4.rom > myCompilation.rom``. Under Windows/MS-DOS: ``copy /b 1.rom + 2.rom + 3.rom + 4.rom myCompilation.rom``
+To simplify ROMs upload it is possible concat four ROM files to a single file. Command under Linux/Unix: ``cat 1.rom 2.rom 3.rom 4.rom > myCompilation.rom``; under Windows/MS-DOS: ``copy /b 1.rom + 2.rom + 3.rom + 4.rom myCompilation.rom``
 
-Jumpers A14 and A15 decide which 16 KiB ROM bank is active. (A14 and A15 are signals of the W27C512, not A14 and A15 of the ZX Spectrum Edge connector)
+Jumpers A14 and A15 decide which 16 KiB ROM bank is active. (A14 and A15 are address pins of the W27C512, not A14 and A15 of the ZX Spectrum Edge connector)
 
-This is only a simple ROM cartridge for 16 KiB ROMs. If you want a better cartridge, check for example the sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
+This is only a simple ROM cartridge for 16 KiB ROMs. If you want a better cartridge, check for example sophisticated [Paul Farrow's ZXC4 cartridge](http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_ZXC4.htm)
 
 
 ## EAGLE project

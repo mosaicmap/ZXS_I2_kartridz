@@ -1,2 +1,5 @@
+*.epf linguist-language=Eagle
+*.scr linguist-language=Eagle
+*.lbr linguist-language=Eagle
 *.sch linguist-language=Eagle
 *.brd linguist-language=Eagle
